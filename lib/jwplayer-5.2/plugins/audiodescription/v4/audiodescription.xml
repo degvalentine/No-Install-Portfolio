@@ -1,0 +1,51 @@
+<plugin>
+	<title>Audiodescription</title>
+	<filename>audiodescription.swf</filename>
+	<version>1</version>
+	<compatibility>Compatible with 4.1; controlbar button works from 4.3; state/volume flashvars work from 4.4; dock button works from 4.5</compatibility>
+	<author>LongTail Video</author>
+	<description>This plugin plays a closed audiodescription with a video. 
+		For the 4.3 player or higher, the plugin will place a  button in the controlbar.
+		For the 4.5 button or higher, the plugin can also place a button in the dock.</description>
+	<href>http://developer.longtailvideo.com/trac/browser/plugins/audiodescription</href>
+
+	<flashvars>
+		<flashvar>
+			<name>debug</name>
+			<default>false</default>
+			<description>
+				Use this to debug the ducking functionality.
+				When set to "true", the plugin renders the waveform and ducking percentage on screen.
+			</description>
+		</flashvar>
+		<flashvar>
+			<name>ducking</name>
+			<default>0</default>
+			<description>
+				The volume percentage the original audio is ducked (0 to 100).
+				For example, if your original volume is 90, 
+				you might want to set this to 80 to almost completely duck the original.
+				Ducking only works for clients using Flash player 10+ (90%).
+			</description>
+		</flashvar>
+		<flashvar>
+			<name>file</name>
+			<default></default>
+			<description>Location of the audiodescription MP3 to play.</description>
+		</flashvar>
+		<flashvar>
+			<name>state</name>
+			<default>true</default>
+			<description>Set this to "false" to turn off the audiodescription by default.</description>
+		</flashvar>
+		<flashvar>
+			<name>volume</name>
+			<default>90</default>
+			<description>
+				Volume of the audiodescription.
+				The AD volume will not change whenever the main volume is changed.
+			</description>
+		</flashvar>
+	</flashvars>
+
+</plugin>

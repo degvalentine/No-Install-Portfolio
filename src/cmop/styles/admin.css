@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/************************** color */
+.white #adminForm input[type="submit"]:hover {
+	color:black;
+}
+.black #adminForm input[type="submit"]:hover {
+	color:white;
+}
+.white #adminForm, 
+.white #adminForm input[type="submit"] {
+	color:gray;
+}
+.black #adminForm, 
+.black #adminForm input[type="submit"] {
+	color:silver;
+}
+
+#config {
+	display:none;
+	position:absolute;
+	left:5px;
+	padding:10px;
+	background:white;
+	border:1px solid black;
+}
+#configForm fieldset {
+	border:none;
+	border-top:1px solid #dcddde;
+	padding:0 4px;
+	margin-bottom:10px;
+}
+#configForm legend {
+	background-color:white;
+	padding:0 10px 0 0;
+	margin-left:-4px;
+	color:black;
+}
+#configForm .input-block {
+	margin:10px 20px 10px 0;
+	float:left;
+}
+#configForm .input-block div {
+	margin:0 0 10px 10px;
+}
+#configForm .input-block input {
+	margin:0 5px 0 0;
+}
+#configForm .input-block input[type='radio'] {
+	vertical-align:text-top;
+}
+#configForm .input-block label {
+	text-transform:uppercase;
+	color:black;
+}
+#configForm .input-block img {
+	vertical-align:middle;
+}
+#configForm br {
+	clear:both;
+}
+#configForm a {
+	color:gray;
+}
+
+.editor {
+	display:none;
+}
+.editable:hover {
+	background-color:#ecf1f6;
+}
+li, #menu li {
+	cursor:n-resize;
+}
+#reset {
+	left:100px;
+}
+div.wysiwyg, #canvas li input.save-button {
+	margin-left:135px;
+}
+#canvas .adminPage {
+	overflow:visible;
+	width:600px;
+}
+#canvas .adminPage > ul > li {
+	overflow:auto;
+	clear:both;
+	margin-bottom:20px;
+	cursor:n-resize;
+	min-width:600px;
+}
+#canvas li img, #canvas .uploadButton, .media-thumb {
+	width:120px;
+	height:90px;
+}
+#canvas li img, #canvas li p, #canvas .uploadButton, .media-thumb {
+	float:left;
+}
+#canvas li label {
+	color:silver;
+	margin-left:15px;
+}
+#canvas li textarea {
+	width:350px;
+	height:60px;
+}
+#canvas li form.media-html textarea {
+	height:200px;
+}
+#canvas li input[type="text"] {
+	width:50px;
+}
+#canvas li textarea, #canvas li input {
+	margin-left:15px;
+}
+.uploadButton, .media-thumb {
+	text-align:center;
+	font-weight:bold;
+	color:black;
+	background:silver;
+}
+#logo .uploadButton {
+	padding:5px;
+	margin:0 10px 10px 0;
+}
+#wrapper {
+	margin-top:60px;
+}
+#adminCmd {
+	position:absolute;
+	padding:0px;
+	top:0px;
+	left:0px;
+	height:45px;
+	border-bottom:1px solid silver;
+	min-width:750px;
+	width:100%;
+}
+#adminForm select {
+	vertical-align:top;
+	margin:13px 10px 0 0;
+}
+#adminForm, #adminForm input[type="submit"] {
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+#adminForm input[type="submit"] {
+	padding-top:10px;
+	background:none;
+	border:none;
+}
+input[type="text"].empty {
+	color:silver;
+}
+
+button {
+	width:100px;
+}
+.media-html span.alert {
+	color:red;
+	margin-left:10px;
+}
+

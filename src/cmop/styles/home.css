@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	margin:0;
+	font-size:11px;
+}
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+img {
+	vertical-align:top;
+}
+a {
+	text-decoration:none;
+}
+
+/************************** colors */
+body.white, 
+.white #wrapper {
+	background-color:white;
+}
+body.black, 
+.black #wrapper {
+	background-color:black;
+}
+
+.white a,
+.white .counter.prev:hover, 
+.white .counter.next:hover, 
+.white .title:hover, 
+.white #menus li.active > span.title {
+	color:black;
+}
+.black a, 
+.black .counter.prev:hover, 
+.black .counter.next:hover, 
+.black .title:hover, 
+.black #menus li.active > span.title {
+	color:white;
+}
+.white .media-html,
+.white .counter, 
+.white a:hover, 
+.white p, 
+.white .title, 
+.white .admin-link, 
+.white #static li {
+	color:#808080;
+}
+.black .media-html,
+.black .counter, 
+.black a:hover, 
+.black p,  
+.black .title, 
+.black .admin-link, 
+.black #static li {
+	color:#939393;
+}
+
+
+/************************** other */
+#wrapper {
+	overflow:visible;
+	padding-top:20px;
+}
+table.layout td {
+	vertical-align:top;
+}
+#logo, #menus, #static, #canvas, #logo img {
+	clear:both;
+	padding:0 10px 10px 20px;
+	overflow:auto;
+}
+#logo {
+	padding:0;
+}
+
+.media-html {
+	font-size:14px;
+	max-width:650px;
+}
+.media-html h1, .media-html h2, .media-html h3, .media-html h4, .media-html h5 {
+	margin-top:0;
+}
+/* parent/leaf + - */
+/*
+.title {
+	background-image:url(../img/leaf.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	padding-left:15px;
+}
+.parent > .title {
+	background-image:url(../img/parent.png);
+}
+.parent.active > .title {
+	background-image:url(../img/leaf.png);
+}
+*/
+
+.title {
+	white-space:nowrap;
+}
+
+.help {
+	font-size:smaller;
+	margin-left:5px;
+}
+
+.counter {
+	display:none;
+}
+.counter.prev, .counter.next {
+	font-family:monospace;
+	font-size:14px;
+	line-height:12px;
+	padding:0 2px;
+}
+.counter.prev {
+	padding-left:15px;
+}
+#canvas {
+}
+#canvas img {
+	border:none;
+	cursor:pointer;
+}
+#menus ul {
+	display:none;
+	margin:0;
+	padding:0;
+}
+#menus ul.top {
+	display:block;
+}
+#menus li { 
+	margin:0;
+	cursor:pointer;
+}
+form.popup {
+	display:none;
+	position:absolute;
+}
+.loader {
+	margin:30px;
+}
+
+/************************** menu-implementation specific styles */
+#menus ul ul {
+	margin-left:10px;
+	display:none;
+}
+#menus li.menu-parent ul {
+}
+.menuTier {
+	float:left;
+	margin-right:20px;
+}
+#menus li, #static li { 
+	padding:0;
+}
+/************************** context menu styles */
+ul.contextMenu {
+	/* Required settings */
+	top:-1000px; left:-1000px; position:absolute; z-index:999; 
+	/* Possibly inherited values overrides */
+	border-width:0;  float:none; height:auto; margin:0; padding:0; width:auto;	
+	/* Additional settings */
+	color:black;
+	border:solid 1px #979797;
+	background:#f0f0f0;
+}
+ul.contextMenu li {
+	/* Required settings */
+	width:162px; list-style:none none outside;
+	/* Possibly inherited values overrides */
+	float:none; height:auto; letter-spacing:normal; margin:0; border-width:0; line-height:normal; margin:0; 
+	text-align:left; text-decoration:none; text-indent:0; text-transform:none; vertical-align:top; word-spacing:normal;
+	font-family:Arial, Sans-Serif; font-size:13px; font-style:normal; font-variant:normal; font-weight:normal;
+	/* Additional settings */
+	overflow:hidden;
+	cursor:default;
+	padding:1px 5px;
+	font-size:11px;
+	border:1px solid #f0f0f0;
+	margin:2px;
+}
+ul.contextMenu li.hover, ul.contextMenu li:hover {
+	background-color:#ecf1f6;
+	border-color:#aecff7;
+}
+ul.contextMenu li.separator { width:198px; height:12px; background:#e6e6e6 url(images/separator.gif) no-repeat; padding:0 }
+/* IE 6/7 hack */
+ul.contextMenu li.separator{*margin:-1px 0 -5px 0}
+ul.contextMenu li.disabled{color:#999}
+ul.contextMenu li span.submenu{display:block; width:4px; height:11px; float:right; background:url(images/submenu.gif) no-repeat 0 4px}
+ul.contextMenu li.disabled span.submenu{background-image:url(images/submenu_dis.gif)}
+/* no hover effects on separators*/
+ul.contextMenu li.hover.separator{background-color:#e6e6e6; background-image:url(images/separator.gif)}
