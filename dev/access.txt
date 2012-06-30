@@ -1,0 +1,6 @@
+justhost.com
+nevodes1:amelia56
+
+ftp
+nevodes1@nevodesign.com:amelia56 # this one works
+createmyownportfolio:Te5uFRah
